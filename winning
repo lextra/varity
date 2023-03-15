@@ -1,3 +1,13 @@
-local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
-NotifyLib.prompt('varity v1 lol? - bro why did u execute this', ':skull:', 5)
-NotifyLib.prompt('this dosent work - it litterly said in the server', 'u executed nothing lol', 5)
+ game.StarterGui:SetCore("SendNotification", {
+    Title = "Unable to Execute."; 
+    Text = "Something Mustve Went Wrong, reloading..."; 
+    Duration = 6; 
+    })
+
+
+wait(5)
+local h = Instance.new("Message")
+h.Parent = Workspace
+h.Text = "We're sorry we have let you down user, But varity v1 is discontinued."
+wait(10)
+h:Remove()
